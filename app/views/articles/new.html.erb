@@ -1,0 +1,13 @@
+<!--<form action="" >
+  <input name='Title'/>
+  <textarea name='Content' />
+  <input type='button' value='Create Article'/>
+</form>-->
+
+<%= form_for @article do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+  <%= f.submit %>
+<% end %>
