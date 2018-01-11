@@ -1,2 +1,10 @@
 <h1><%= @article.title %></h1>
 <p><%= @article.content %></p>
+
+<%= form_with url: article_comments_path(@article) do |form| %>
+  <%= form.label :email %>
+  <%=form.text_field :email %>
+  <%=form.label :comment %>
+  <%=form.text_field :comment %>
+  <%= form.submit 'Create Comment' %>
+<% end %>
