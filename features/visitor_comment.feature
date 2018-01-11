@@ -18,4 +18,4 @@ Feature: User can comment on an article
     And I fill in "Comment" with "Star Trek Discovery"
     And I click on "Create Comment"
     Then I should be on the "Learn Rails 5" article page
-    And I should see "Your comment was added successfully and will be reviews before publication"
+    And I should see "Your comment was added successfully"
