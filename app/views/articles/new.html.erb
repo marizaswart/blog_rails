@@ -1,9 +1,3 @@
-<!--<form action="" >
-  <input name='Title'/>
-  <textarea name='Content' />
-  <input type='button' value='Create Article'/>
-</form>-->
-
 <%= form_for @article do |f| %>
   <% if @article.errors.any? %>
     <ul>
