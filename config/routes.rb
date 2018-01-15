@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
  # get 'comments/create'
+ # get 'article/show'
 
   resources :articles do
     resources :comments
